@@ -8,8 +8,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/vista" />} />
-        <Route path="/vista" element={<TicketForm />} />
+        <Route path="/" element={<TicketForm />} />
       </Routes>
     </Router>
   );
