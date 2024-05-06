@@ -8,7 +8,6 @@ const paisSchema = new mongoose.Schema({
     code: String
 });
 
-
 const Pais = mongoose.model('pais', paisSchema);
 
 
