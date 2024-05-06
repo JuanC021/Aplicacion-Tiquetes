@@ -20,6 +20,6 @@ mongoose.connect(process.env.direccion)
   .then(() => console.log('Conexión de base de datos establecida'))
   .catch((error) => console.error(error));
 
-app.listen(3000, () => {
-  console.log('Escuchando en el puerto 3000');
+app.listen(4000, () => {
+  console.log('Escuchando en el puerto 4000');
 });
