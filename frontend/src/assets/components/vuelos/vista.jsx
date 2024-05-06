@@ -13,7 +13,7 @@ const TicketForm = () => {
 
   useEffect(() => {
     if (origin) {
-      fetch(`https://aplicacion-tiquetes-back.vercel.app/https://aplicacion-tiquetes-back.vercel.app/api/vuelos/paises?query=${origin}`)
+      fetch(`https://aplicacion-tiquetes-back.vercel.app/api/vuelos/paises?query=${origin}`)
         .then(response => response.json())
         .then(data => {
           console.log(data); // Muestra los datos recibidos en la consola
