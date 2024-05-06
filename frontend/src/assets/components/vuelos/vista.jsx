@@ -1,7 +1,7 @@
 import React, { useState , useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DatePicker from 'react-datepicker'; // Importa react-datepicker
-import 'react-datepicker/dist/react-datepicker.css'; // Importa los estilos de react-datepicker
+import 'react-datepicker/dist/react-datepicker.css'; 
 
 const TicketForm = () => {
   const [origin, setOrigin] = useState('');
