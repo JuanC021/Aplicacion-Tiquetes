@@ -12,5 +12,4 @@ const Pais = mongoose.model('pais', paisSchema);
 
 
 
-
 module.exports = Pais;
