@@ -20,6 +20,14 @@ const guardarVuelo = async (req, res) => {
   try {
     const { origin, destination, date } = req.body;
 
+
+    //verificar si los campos "pais origen" "pais destino", son iguales o no.
+
+    if (origin ===destination){
+
+      return res.status(400).json({message:'El pais de origen y destion no pueden ser los mismos.'});
+    }
+
     // Verificar si ya existe un boleto con el mismo origen
     const existingOriginVuelo = await Vuelo.findOne({ origin });
     if (existingOriginVuelo) {
