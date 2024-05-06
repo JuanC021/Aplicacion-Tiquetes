@@ -14,7 +14,7 @@ app.use(json());
 app.use(cors());
 
 // Usa las rutas de vuelos
-app.use('/api/vuelos', vuelosrouter);
+app.use('/vuelos', vuelosrouter);
 
 mongoose.connect(process.env.direccion)
   .then(() => console.log('Conexión de base de datos establecida'))

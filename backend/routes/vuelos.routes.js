@@ -5,6 +5,6 @@ const ticketsControl = require('../controllers/vuelosControllers');
 router
 
 .get('/paises', ticketsControl.obtenerPaises)
-.post('/', ticketsControl.guardarVuelo);
+.post('/boletos', ticketsControl.guardarVuelo);
 
 module.exports = router;
