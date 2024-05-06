@@ -13,7 +13,7 @@ const TicketForm = () => {
 
   useEffect(() => {
     if (origin) {
-      fetch(`http://localhost:4000/api/vuelos/paises?query=${origin}`)
+      fetch(`https://aplicacion-tiquetes-back.vercel.app/https://aplicacion-tiquetes-back.vercel.app/api/vuelos/paises?query=${origin}`)
         .then(response => response.json())
         .then(data => {
           console.log(data); // Muestra los datos recibidos en la consola
@@ -25,7 +25,7 @@ const TicketForm = () => {
 
   useEffect(() => {
     if (destination) {
-      fetch(`http://localhost:4000/api/vuelos/paises?query=${destination}`)
+      fetch(`https://aplicacion-tiquetes-back.vercel.app/api/vuelos/paises?query=${destination}`)
         .then(response => response.json())
         .then(data => {
           console.log(data); // Muestra los datos recibidos en la consola
@@ -41,7 +41,7 @@ const handleSaveTicket = async () => {
       // Obtener la fecha y hora actual
       const fechaActual = new Date();
 
-      const response = await fetch('http://localhost:4000/api/vuelos/boletos', {
+      const response = await fetch('https://aplicacion-tiquetes-back.vercel.app/api/vuelos/boletos', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
